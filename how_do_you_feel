@@ -12,31 +12,42 @@
 
 <div data-role="page">
   <div data-role="header">
-    <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
     <h1>Emotionalytics: How Do You Feel?</h1>
   </div>
   <div data-role="main" class="ui-content">
     <p>Move these sliders based on how you are feeling today.</p>
     <form method="post" action="demoform.asp">
       <label for="points">Points:</label>
-      <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true">
-      <p>Bored</p>
+      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+      <p style="float: left; padding-left: 68px">Bored</p>
+      <p style="float: right; padding-right: 15px">Excited</p>
+      <br style="clear:both"/>    
     </form>
   </div>
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
-      <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true">
+      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+      <p style="float: left; padding-left: 68px">Frustrated</p>
+      <p style="float: right; padding-right: 15px">Calm</p>
+      <br style="clear:both"/> 
     </form>
   </div>
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
-      <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true">
+      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+      <p style="float: left; padding-left: 68px">Anxious</p>
+      <p style="float: right; padding-right: 15px">Confident</p>
+      <br style="clear:both"/> 
     </form>
   </div>
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
-      <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true">
-      <input type="submit" data-inline="true" value="Submit">
+      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+      <p style="float: left; padding-left: 68px">Sad</p>
+      <p style="float: right; padding-right: 15px">Happy</p>
+      <br style="clear:both"/> 
+      <input type="submit" data-inline="true" value="Next" onclick="window.location='what_did_you_do_today';">
     </form>
   </div>
 </div>

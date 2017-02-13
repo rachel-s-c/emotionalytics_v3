@@ -10,7 +10,7 @@
 
 <div data-role="page">
   <div data-role="header">
-  <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+  <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
   <h1>Emotionalytics: Who Did You See Today?</h1>
   </div>
 
@@ -21,18 +21,18 @@
         <form class="ui-filterable">
           <input id="myFilter" data-type="search" placeholder="Search for names...">
         </form>
-          <label for="john">John Green</label>
+          <label for="john"><img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px; vertical-align: middle">John Green</label>
           <input type="checkbox" name="people" id="john" value="john">
-          <label for="amy">Amy Schumer</label>
+          <label for="amy"><img src = "https://pbs.twimg.com/profile_images/659040352507039744/1tw770Qo.jpg" alt = "Amy Schumer" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Amy Schumer</label>
           <input type="checkbox" name="people" id="amy" value="amy">
-          <label for="zac">Zac Efron</label>
+          <label for="zac"><img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Zac Efron</label>
           <input type="checkbox" name="people" id="zac" value="zac">
-          <label for="mary">Mary Lewis</label>
+          <label for="mary"><img src = "http://www.globalharvestinitiative.org/wp-content/uploads/2015/10/Mary-Lewis-Headshot.jpg" alt = "Mary Lewis" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Mary Lewis</label>
           <input type="checkbox" name="people" id="mary" value="mary">
-          <label for="greg">Greg Bolton</label>
+          <label for="greg"><img src = "http://www.landmarkprofessional.net/wp-content/uploads/2015/02/Greg_Bolton.jpg" alt = "Greg Bolton" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Greg Bolton</label>
           <input type="checkbox" name="people" id="greg" value="greg">
       </fieldset>
-      <input type="submit" data-inline="true" value="Submit">
+      <input type="submit" data-inline="true" value="Submit" onclick="window.location='data_analysis';">
     </form>
   </div>
 </div>

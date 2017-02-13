@@ -17,13 +17,13 @@
     <div data-role="main" class="ui-content">
       <div data-role="navbar">
         <ul>
-          <li><a href="#" data-icon="plus">Log an Entry</a></li>
+          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel';">Log an Entry</a></li>
         </ul>
       </div>
       <p>Other options:</p>
       <div data-role="navbar">
         <ul>
-          <li><a href="#" data-icon="eye">Data Analysis</a></li>
+          <li><a href="#" data-icon="eye" onclick="window.location='data_analysis';">Data Analysis</a></li>
           <li><a href="#" data-icon="clock">History</a></li>
           <li><a href="#" data-icon="user">Connect</a></li>
           <li><a href="#" data-icon="action">Share</a></li>

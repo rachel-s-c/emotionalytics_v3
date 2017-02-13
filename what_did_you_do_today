@@ -10,7 +10,7 @@
 
 <div data-role="page">
   <div data-role="header">
-  <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+  <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
   <h1>Emotionalytics: What Did You Do Today?</h1>
   </div>
 
@@ -19,19 +19,30 @@
       <fieldset data-role="controlgroup">
         <legend> The following apps have been synced. Please deselect which of the following highlights you would not like to include in today's entry. </legend>
           <label for="camera"> Camera Roll 
-            <img src="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_1280.jpg" class="activity-item" alt = "Spotify" style="height:50px; width:50px; padding: 10px; float: right">
-            <img src="http://weknowyourdreams.com/images/family/family-07.jpg" class="activity-item" alt = "Spotify" style="height:50px; width:50px; padding: 10px; float: right">
-            <img src="http://www.technobuffalo.com/wp-content/uploads/2014/04/fast-food.jpg" class="activity-item" alt = "Spotify" style="height:50px; width:50px; padding: 10px; float: right">
-            <img src="https://cdn.pixabay.com/photo/2016/02/19/15/46/dog-1210559_1280.jpg" class="activity-item" alt = "Spotify" style="height:50px; width:50px; padding: 10px; float: right">
+            <img src="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_1280.jpg" alt = "Cat" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+            <img src="http://weknowyourdreams.com/images/family/family-07.jpg" alt = "Family" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+            <img src="http://www.technobuffalo.com/wp-content/uploads/2014/04/fast-food.jpg" alt = "Burger" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+            <img src="https://cdn.pixabay.com/photo/2016/02/19/15/46/dog-1210559_1280.jpg" alt = "Dog" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
           </label>
           <input type="checkbox" name="apps" id="camera" value="camera" checked>
-          <label for="calendar">Calendar</label>
+          <label for="calendar"> Calendar
+            <img src="calendar-event.png" class="activity-item" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+            <img src="calendar-event2.png" class="activity-item" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+          </label>
           <input type="checkbox" name="apps" id="calendar" value="calendar" checked>
-          <label for="instagram">Instagram</label>
+          <label for="instagram">Instagram             
+            <img src="http://previews.123rf.com/images/piksel/piksel0910/piksel091000022/5644857-Friends-with-thumbs-up-Stock-Photo-group-teenagers.jpg" alt = "Instagram" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+          </label>
           <input type="checkbox" name="apps" id="instagram" value="instagram" checked>
-          <label for="spotify">Spotify</label>
+          <label for="spotify">Spotify 
+            <img src="http://www.billboard.com/files/media/hamilton-musical-broadway-album-2015-billboard-650x_650.jpg" alt = "Broadway" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+            <img src="https://nubimagazine.com/wp-content/uploads/2014/10/taylor-swift-1989.jpg" alt = "Taylor Swift" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+          </label>
           <input type="checkbox" name="apps" id="spotify" value="spotify" checked>
-          <label for="fitbit">Fitbit</label>
+          <label for="fitbit">Fitbit 
+            <img src="http://www.todayimight.com/wp-content/uploads/2015/05/30000Step_Badge.png" alt = "Step Badge" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+            <img src="http://www.2wired2tired.com/wp-content/uploads/2013/03/Fitbit-Monthly-Steps.png" alt = "Chart" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
+          </label>
           <input type="checkbox" name="apps" id="fitbit" value="fitbit" checked>
       </fieldset>
 
@@ -39,7 +50,7 @@
         <label for="info">Additional Information:</label>
         <textarea name="addinfo" id="info"></textarea>
       </div>
-      <input type="submit" data-inline="true" value="Submit">
+      <input type="submit" data-inline="true" value="Next" onclick="window.location='who_did_you_see_today';">
     </form>
   </div>
 </div>
