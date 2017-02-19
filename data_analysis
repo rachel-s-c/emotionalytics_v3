@@ -16,13 +16,13 @@
         type: "line",
 
         dataPoints: [
-        { x: new Date(2017, 00, 15), y: 42 },
-        { x: new Date(2017, 00, 16), y: 46 },
-        { x: new Date(2017, 00, 17), y: 12 },
-        { x: new Date(2017, 00, 18), y: 09 },
-        { x: new Date(2017, 00, 19), y: 23 },
-        { x: new Date(2017, 00, 20), y: 14 },
-        { x: new Date(2017, 00, 21), y: 29 }
+          { x: new Date(2017, 00, 15), y: -21},
+  					{ x: new Date(2017, 00, 16), y: -30},
+          	{ x: new Date(2017, 00, 17), y: 24},
+          	{ x: new Date(2017, 00, 18), y: 1},
+          	{ x: new Date(2017, 00, 19), y:48},
+          	{ x: new Date(2017, 00, 20), y: 32},
+          	{ x: new Date(2017, 00, 21), y: 20},
         ]
       }
       ]
