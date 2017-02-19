@@ -36,6 +36,10 @@
       </ul>
     </div>
   </div>
+  <div data-role="footer" class="ui-content">
+    <button class="ui-btn" onclick="window.location='data_jan18';">Previous Entry</button>
+    <button class="ui-btn" onclick="window.location='data_jan20';">Next Entry</button>
+  </div>
 </div>
 </body>
 </html>
