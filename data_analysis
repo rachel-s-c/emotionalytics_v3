@@ -5,6 +5,33 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- script for chart -->
+<script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+          { x: new Date(2017, 00, 15), y: -21},
+  					{ x: new Date(2017, 00, 16), y: -30},
+          	{ x: new Date(2017, 00, 17), y: 24},
+          	{ x: new Date(2017, 00, 18), y: 1},
+          	{ x: new Date(2017, 00, 19), y:48},
+          	{ x: new Date(2017, 00, 20), y: 32},
+          	{ x: new Date(2017, 00, 21), y: 20},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+	<script src="../../canvasjs.min.js"></script>
 </head>
 <body>
 
@@ -14,8 +41,9 @@
       <h1>Emotionalytics: Data Analysis</h1>
     </div>
 
-    <div data-role="main" class="ui-content">
-    <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" ">
+  <div data-role="main" class="ui-content">
+    <!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
+    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
     <p> Positive Mood Influencers: </p>
       <div data-role="collapsible" data-theme="b" data-content-theme="a">
       <h4>Activities:</h4>
@@ -34,7 +62,8 @@
          <li><a href="#"> <img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
       </ul>
     </div>
-  </div> 
+  </div>
+</div>
 
 </body>
 </html>
