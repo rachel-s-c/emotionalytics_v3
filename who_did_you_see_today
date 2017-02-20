@@ -32,6 +32,7 @@
           <label for="greg"><img src = "http://www.landmarkprofessional.net/wp-content/uploads/2015/02/Greg_Bolton.jpg" alt = "Greg Bolton" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Greg Bolton</label>
           <input type="checkbox" name="people" id="greg" value="greg">
       </fieldset>
+      <input type="submit" data-inline="true" value="Back" onclick="window.location='what_did_you_do_today';">
       <input type="submit" data-inline="true" value="Submit" onclick="window.location='data_analysis';">
     </form>
   </div>

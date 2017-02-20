@@ -50,6 +50,7 @@
         <label for="info">Additional Information:</label>
         <textarea name="addinfo" id="info"></textarea>
       </div>
+      <input type="submit" data-inline="true" value="Back" onclick="window.location='how_do_you_feel';">
       <input type="submit" data-inline="true" value="Next" onclick="window.location='who_did_you_see_today';">
     </form>
   </div>
