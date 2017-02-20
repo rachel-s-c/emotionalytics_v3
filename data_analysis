@@ -35,22 +35,22 @@ window.onload = function () {
 	chart.render();
 
 	function onClick(e) {
-		if(e.dataPoint.label = "Feb 15 '17") {
+		if(e.dataPoint.label == "Feb 15 '17") {
 			document.location.href = 'data_jan15.html';
 		}
-		else if(e.dataPoint.label = "Feb 16 '17") {
+		else if(e.dataPoint.label == "Feb 16 '17") {
 			document.location.href = 'data_jan16.html';
 		}
-		else if(e.dataPoint.label = "Feb 17 '17") {
+		else if(e.dataPoint.label == "Feb 17 '17") {
 			document.location.href = 'data_jan17.html';
 		}
-		else if(e.dataPoint.label = "Feb 18 '17") {
+		else if(e.dataPoint.label == "Feb 18 '17") {
 			document.location.href = 'data_jan18.html';
 		}
-		else if(e.dataPoint.label = "Feb 19 '17") {
+		else if(e.dataPoint.label == "Feb 19 '17") {
 			document.location.href = 'data_jan19.html';
 		}
-		else if(e.dataPoint.label = "Feb 2- '17") {
+		else if(e.dataPoint.label == "Feb 20 '17") {
 			document.location.href = 'data_jan20.html';
 		}
 	}
