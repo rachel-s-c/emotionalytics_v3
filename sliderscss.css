@@ -1,0 +1,48 @@
+body {
+	font-family: Arial, Helvetica, sans-serif; background-color: "blue";
+}
+#coloredSlider1 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider1 .ui-slider-range { 
+	background: #ff0000; 
+}
+
+#coloredSlider2 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider2 .ui-slider-range { 
+	background: #ff0000; 
+}
+
+
+
+#coloredSlider3 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider3 .ui-slider-range { 
+	background: #ff0000; 
+}
+
+
+
+#coloredSlider4 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider4 .ui-slider-range { 
+	background: #ff0000; 
+}
+
+
