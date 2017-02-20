@@ -5,6 +5,34 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- script for chart -->
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+var chart = new CanvasJS.Chart("chartContainer", {
+  theme: "theme2",//theme1
+  animationEnabled: false,   // change to true
+  data: [
+  {
+    // Change type to "bar", "area", "spline", "pie",etc.
+    type: "line",
+    dataPoints: [
+      { label: "Feb 15 '17",  y: -21},
+      { label: "Feb 16 '17", y: -30},
+      { label: "Feb 17 '17", y: 24},
+      { label: "Feb 18 '17",  y: 1},
+      { label: "Feb 19 '17",  y: 48},
+      { label: "Feb 20 '17",  y: 32},
+      { label: "Feb 21 '17",  y: 20}
+    ]
+  }
+  ]
+});
+chart.render();
+}
+</script>
 </head>
 <body>
 
@@ -14,8 +42,9 @@
       <h1>Emotionalytics: Data Analysis</h1>
     </div>
 
-    <div data-role="main" class="ui-content">
-    <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" ">
+  <div data-role="main" class="ui-content">
+    <!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
+    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
     <p> Positive Mood Influencers: </p>
       <div data-role="collapsible" data-theme="b" data-content-theme="a">
       <h4>Activities:</h4>
@@ -34,7 +63,8 @@
          <li><a href="#"> <img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
       </ul>
     </div>
-  </div> 
+  </div>
+</div>
 
 </body>
 </html>
