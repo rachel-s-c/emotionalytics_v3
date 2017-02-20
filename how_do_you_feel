@@ -3,8 +3,15 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="sliderscss.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="sliders.js"></script>
+
+
 </head>
 <body>
 
@@ -19,15 +26,22 @@
     <p>Move these sliders based on how you are feeling today.</p>
     <form method="post" action="demoform.asp">
       <label for="points">Points:</label>
-      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+         <div id="coloredSlider1"></div>
       <p style="float: left; padding-left: 68px">Bored</p>
       <p style="float: right; padding-right: 15px">Excited</p>
       <br style="clear:both"/>    
     </form>
   </div>
   <div data-role="main" class="ui-content">
+
     <form method="post" action="demoform.asp">
-      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+
+
+        
+
+
+        <div id="coloredSlider2"></div>
+
       <p style="float: left; padding-left: 68px">Frustrated</p>
       <p style="float: right; padding-right: 15px">Calm</p>
       <br style="clear:both"/> 
@@ -35,19 +49,25 @@
   </div>
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
-      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+      <div id="coloredSlider3"></div>
+
       <p style="float: left; padding-left: 68px">Anxious</p>
       <p style="float: right; padding-right: 15px">Confident</p>
       <br style="clear:both"/> 
     </form>
   </div>
+
+
+
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
-      <input type="range" name="points" id="points" value="0" min="-50" max="50" data-highlight="true">
+             <div id="coloredSlider4"></div>
       <p style="float: left; padding-left: 68px">Sad</p>
       <p style="float: right; padding-right: 15px">Happy</p>
       <br style="clear:both"/> 
+      <input type="submit" data-inline="true" value="Back" onclick="window.location='home';">
       <input type="submit" data-inline="true" value="Next" onclick="window.location='what_did_you_do_today';">
+
     </form>
   </div>
 </div>
