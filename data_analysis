@@ -11,26 +11,50 @@
 <script type="text/javascript">
 
 window.onload = function () {
-var chart = new CanvasJS.Chart("chartContainer", {
-  theme: "theme2",//theme1
-  animationEnabled: false,   // change to true
-  data: [
-  {
-    // Change type to "bar", "area", "spline", "pie",etc.
-    type: "line",
-    dataPoints: [
-      { label: "Feb 15 '17",  y: -21},
-      { label: "Feb 16 '17", y: -30},
-      { label: "Feb 17 '17", y: 24},
-      { label: "Feb 18 '17",  y: 1},
-      { label: "Feb 19 '17",  y: 48},
-      { label: "Feb 20 '17",  y: 32},
-      { label: "Feb 21 '17",  y: 20}
-    ]
-  }
-  ]
-});
-chart.render();
+	var chart = new CanvasJS.Chart("chartContainer", {
+		theme: "theme2",
+		title:{
+			text: "Basic Column Chart - CanvasJS"
+		},
+		animationEnabled: false,
+		data: [
+		{
+			type: "line",
+			dataPoints: [
+				{ label: "Feb 15 '17",  y: -21, click: onClick},
+				{ label: "Feb 16 '17", y: -30, click: onClick},
+				{ label: "Feb 17 '17", y: 24, click: onClick},
+				{ label: "Feb 18 '17",  y: 1, click: onClick},
+				{ label: "Feb 19 '17",  y: 48, click: onClick},
+				{ label: "Feb 20 '17",  y: 32, click: onClick},
+				{ label: "Feb 21 '17",  y: 20, click: onClick}
+			]
+		}
+		]
+	});
+	chart.render();
+
+	function onClick(e) {
+		if(e.dataPoint.label = "Feb 15 '17") {
+			document.location.href = 'data_jan15.html';
+		}
+		else if(e.dataPoint.label = "Feb 16 '17") {
+			document.location.href = 'data_jan16.html';
+		}
+		else if(e.dataPoint.label = "Feb 17 '17") {
+			document.location.href = 'data_jan17.html';
+		}
+		else if(e.dataPoint.label = "Feb 18 '17") {
+			document.location.href = 'data_jan18.html';
+		}
+		else if(e.dataPoint.label = "Feb 19 '17") {
+			document.location.href = 'data_jan19.html';
+		}
+		else if(e.dataPoint.label = "Feb 2- '17") {
+			document.location.href = 'data_jan20.html';
+		}
+	}
+
 }
 </script>
 </head>
