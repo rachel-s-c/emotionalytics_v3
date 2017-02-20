@@ -7,31 +7,32 @@
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <!-- script for chart -->
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
-  window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-       data: [
-      {
-        type: "line",
 
-        dataPoints: [
-          { x: new Date(2017, 00, 15), y: -21},
-  					{ x: new Date(2017, 00, 16), y: -30},
-          	{ x: new Date(2017, 00, 17), y: 24},
-          	{ x: new Date(2017, 00, 18), y: 1},
-          	{ x: new Date(2017, 00, 19), y:48},
-          	{ x: new Date(2017, 00, 20), y: 32},
-          	{ x: new Date(2017, 00, 21), y: 20},
-        ]
-      }
-      ]
-    });
-
-    chart.render();
+window.onload = function () {
+var chart = new CanvasJS.Chart("chartContainer", {
+  theme: "theme2",//theme1
+  animationEnabled: false,   // change to true
+  data: [
+  {
+    // Change type to "bar", "area", "spline", "pie",etc.
+    type: "line",
+    dataPoints: [
+      { label: "Feb 15 '17",  y: -21},
+      { label: "Feb 16 '17", y: -30},
+      { label: "Feb 17 '17", y: 24},
+      { label: "Feb 18 '17",  y: 1},
+      { label: "Feb 19 '17",  y: 48},
+      { label: "Feb 20 '17",  y: 32},
+      { label: "Feb 21 '17",  y: 20}
+    ]
   }
-  </script>
-	<script src="../../canvasjs.min.js"></script>
+  ]
+});
+chart.render();
+}
+</script>
 </head>
 <body>
 
