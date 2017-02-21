@@ -67,7 +67,7 @@ window.onload = function () {
       <h1 id="title">Welcome To Emotionalytics</h1>
       <h1>February 20, 2017</h1>
       <style>
-        #title {font-size: 22px;}
+        #title {font-size: 24px;}
       </style>
     </div>
 
