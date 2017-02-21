@@ -73,7 +73,7 @@
 			#chart-title {font-size: 22px; text-align: center;}
 		</style>
 			<!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
-			<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+			<div id="chartContainer" style="height: 400px; width: 850px; margin:auto;"></div>
 			<p id="subtitle"> Top Positive Mood Influencers: </p>
 			<style>
 				#subtitle {font-size: 22px;}
