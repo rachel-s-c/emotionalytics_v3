@@ -11,7 +11,7 @@
 <div data-role="page">
   <div data-role="header">
   <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
-  <h1>Emotionalytics: Who Did You See Today?</h1>
+  <h1>Log an Entry: Who Did You See Today?</h1>
   </div>
 
   <div data-role="main" class="ui-content">
