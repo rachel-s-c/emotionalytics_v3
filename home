@@ -72,7 +72,7 @@ window.onload = function () {
     </div>
 
     <div data-role="main" class="ui-content">
-        <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+        <div id="chartContainer" style="height: 400px; width: 75%;"></div>
       <div data-role="navbar">
         <ul>
           <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel';">Log an Entry</a></li>
