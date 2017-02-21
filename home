@@ -22,7 +22,7 @@ window.onload = function () {
     {
       type: "line",
       dataPoints: [
-        { label: "Feb 15",  y: Mood Score: -21, click: onClick},
+        { label: "Feb 15", y: -21, click: onClick},
         { label: "Feb 16", y: -30, click: onClick},
         { label: "Feb 17", y: 24, click: onClick},
         { label: "Feb 18",  y: 1, click: onClick},
