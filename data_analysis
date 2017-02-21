@@ -13,9 +13,9 @@
 		window.onload = function () {
 			var chart = new CanvasJS.Chart("chartContainer", {
 				theme: "theme2",
-				title:{
-					text: "Weekly Mood Chart"
-				},
+				//title:{
+				//	text: "Weekly Mood Chart"
+				//},
 				animationEnabled: true,
 				data: [
 				{
@@ -63,13 +63,21 @@
 	<div data-role="page" id="pageone">
 		<div data-role="header">
 			<a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
-			<h1>Emotionalytics: Data Analysis</h1>
+			<h1>Data Analysis</h1>
 		</div>
-
+		
+		
 		<div data-role="main" class="ui-content">
+		<h1 id="chart-title">Weekly Mood Chart</h1>
+		<style>
+			#chart-title {font-size: 22px; text-align: center;}
+		</style>
 			<!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
 			<div id="chartContainer" style="height: 400px; width: 100%;"></div>
-			<p> Positive Mood Influencers: </p>
+			<p id="subtitle"> Top Positive Mood Influencers: </p>
+			<style>
+				#subtitle {font-size: 22px;}
+			</style>
 			<div data-role="collapsible" data-theme="b" data-content-theme="a">
 				<h4>Activities:</h4>
 				<ul data-role="listview">
