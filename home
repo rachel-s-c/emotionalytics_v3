@@ -74,7 +74,7 @@ window.onload = function () {
           <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel';">Log an Entry</a></li>
         </ul>
       </div>
-      <p>Other options:</p>
+
       <div data-role="navbar">
         <ul>
           <li><a href="#" data-icon="eye" onclick="window.location='data_analysis';">Data Analysis</a></li>
