@@ -16,30 +16,49 @@
 
     <div data-role="main" class="ui-content">
       <div>
-        Today, your mood score was: 48.
+        Today, your mood score was: 48
       </div>
     <p>Here's what influenced your mood today....</p>
       <div data-theme="b" data-content-theme="a">
       <h4>Activities:</h4>
       <ul data-role="listview">
-        <li><a href="#"> <img src = "http://pre14.deviantart.net/5e2b/th/pre/f/2015/245/9/b/new_spotify_icon_by_mattroxzworld-d98301o.png" alt = "Spotify" style="height:50px; width:50px; padding: 10px">Often by The Weeknd</a></li>
-        <li><a href="#"> <img src = "http://www.myiconfinder.com/uploads/iconsets/067f33d33e085fde8c366c8ae7162d95-heart.png" alt = "Health" style="height:60px; width:60px; padding: 6px">Ran 5 miles, swam 1 mile</a></li>
+        <li><a href="#PopupDialogSpotify" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://pre14.deviantart.net/5e2b/th/pre/f/2015/245/9/b/new_spotify_icon_by_mattroxzworld-d98301o.png" alt = "Spotify" style="height:50px; width:50px; padding: 10px">Often by The Weeknd</a></li>
+        <div data-role="popup" id="PopupDialogSpotify">
+        <div data-role="main" class="ui-content">
+            <p>Are you sure you want to exit Emotionalytics and open Spotify?</p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+            <a href="https://www.spotify.com/us/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+          </div>
+          </div>
+        <li><a href="#PopupDialogFitbit" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://lh3.googleusercontent.com/dIpnDB-EbJhzSkF1jpdHKMq0q1oq58ZsRWVKuEGzmGGaPSIwHKFq05ROAOLS4SzFUw=w300" alt = "Health" style="height:60px; width:60px; padding: 6px">Ran 5 miles, swam 1 mile</a></li>
+                <div data-role="popup" id="PopupDialogFitbit">
+          <div data-role="main" class="ui-content">
+            <p>Are you sure you want to exit Emotionalytics and open Fitbit?</p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+            <a href="https://www.fitbit.com/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+          </div>
+      </div>
       </ul>
     </div>
 
     <div data-theme="b" data-content-theme="a">
       <h4>People:</h4>
       <ul data-role="listview">
-         <li><a href="#"> <img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px">John Green</a></li>
-         <li><a href="#"> <img src = "http://www.globalharvestinitiative.org/wp-content/uploads/2015/10/Mary-Lewis-Headshot.jpg" alt = "Mary Lewis" style="height:50px; width:50px; padding: 10px">Mary Lewis</a></li>
-         <li><a href="#"> <img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
+         <li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px">John Green</a></li>
+                 <div data-role="popup" id="PopupDialogContacts">
+                 <div data-role="main" class="ui-content">
+            <p>Are you sure you want to exit Emotionalytics and open Contacts?</p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" data-rel="back" style="float: right; margin-right: -1px">Exit</a>
+          </div>
+      </div>
+         <li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://www.globalharvestinitiative.org/wp-content/uploads/2015/10/Mary-Lewis-Headshot.jpg" alt = "Mary Lewis" style="height:50px; width:50px; padding: 10px">Mary Lewis</a></li>
+         <li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
       </ul>
     </div>
   </div>
-  <div data-role="footer" class="ui-content">
-    <button class="ui-btn" onclick="window.location='data_jan18.html';" style="float:left;">Previous Entry</button>
-    <button class="ui-btn" onclick="window.location='data_jan20.html';" style="float:right;">Next Entry</button>
-  </div>
+      <a onclick="window.location='data_jan18.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 3px">Previous Entry</a>
+      <a onclick="window.location='data_jan20.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 3px">Next Entry</a>
 </div>
 </body>
 </html>

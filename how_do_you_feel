@@ -25,10 +25,9 @@
   <div data-role="main" class="ui-content">
     <p>Move these sliders based on how you are feeling today.</p>
     <form method="post" action="demoform.asp">
-      <label for="points">Points:</label>
          <div id="coloredSlider1"></div>
-      <p style="float: left; padding-left: 68px">Bored</p>
-      <p style="float: right; padding-right: 15px">Excited</p>
+      <p style="float: left; padding-left: 15px">Bored</p>
+      <p style="float: right; padding-right: -5px">Excited</p>
       <br style="clear:both"/>    
     </form>
   </div>
@@ -42,8 +41,8 @@
 
         <div id="coloredSlider2"></div>
 
-      <p style="float: left; padding-left: 68px">Frustrated</p>
-      <p style="float: right; padding-right: 15px">Calm</p>
+      <p style="float: left; padding-left: 15px">Frustrated</p>
+      <p style="float: right; padding-right: -5px">Calm</p>
       <br style="clear:both"/> 
     </form>
   </div>
@@ -51,8 +50,8 @@
     <form method="post" action="demoform.asp">
       <div id="coloredSlider3"></div>
 
-      <p style="float: left; padding-left: 68px">Anxious</p>
-      <p style="float: right; padding-right: 15px">Confident</p>
+      <p style="float: left; padding-left: 15px">Anxious</p>
+      <p style="float: right; padding-right: -5px">Confident</p>
       <br style="clear:both"/> 
     </form>
   </div>
@@ -62,11 +61,11 @@
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
              <div id="coloredSlider4"></div>
-      <p style="float: left; padding-left: 68px">Sad</p>
-      <p style="float: right; padding-right: 15px">Happy</p>
+      <p style="float: left; padding-left: 15px">Sad</p>
+      <p style="float: right; padding-right: -5px">Happy</p>
       <br style="clear:both"/> 
-      <input type="submit" data-inline="true" value="Back" onclick="window.location='home';">
-      <input type="submit" data-inline="true" value="Next" onclick="window.location='what_did_you_do_today';">
+      <a onclick="window.location='home'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 10px">Back</a>
+      <a onclick="window.location='what_did_you_do_today'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -3px">Next</a>
 
     </form>
   </div>

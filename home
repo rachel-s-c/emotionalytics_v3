@@ -5,6 +5,59 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<!-- script for chart -->
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+  var chart = new CanvasJS.Chart("chartContainer", {
+    theme: "theme2",
+    title:{
+      text: "Weekly Mood Chart"
+    },
+    animationEnabled: false,
+    data: [
+    {
+      type: "line",
+      dataPoints: [
+        { label: "Feb 15",  y: -21, click: onClick},
+        { label: "Feb 16", y: -30, click: onClick},
+        { label: "Feb 17", y: 24, click: onClick},
+        { label: "Feb 18",  y: 1, click: onClick},
+        { label: "Feb 19",  y: 48, click: onClick},
+        { label: "Feb 20",  y: 32, click: onClick},
+        { label: "Feb 21",  y: 20, click: onClick}
+      ]
+    }
+    ]
+  });
+  chart.render();
+
+  function onClick(e) {
+    if(e.dataPoint.label == "Feb 15") {
+      document.location.href = 'data_jan15.html';
+    }
+    else if(e.dataPoint.label == "Feb 16") {
+      document.location.href = 'data_jan16.html';
+    }
+    else if(e.dataPoint.label == "Feb 17") {
+      document.location.href = 'data_jan17.html';
+    }
+    else if(e.dataPoint.label == "Feb 18") {
+      document.location.href = 'data_jan18.html';
+    }
+    else if(e.dataPoint.label == "Feb 19") {
+      document.location.href = 'data_jan19.html';
+    }
+    else if(e.dataPoint.label == "Feb 20") {
+      document.location.href = 'data_jan20.html';
+    }
+  }
+
+}
+</script>
 </head>
 <body>
 
@@ -15,6 +68,7 @@
     </div>
 
     <div data-role="main" class="ui-content">
+        <div id="chartContainer" style="height: 400px; width: 100%;"></div>
       <div data-role="navbar">
         <ul>
           <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel';">Log an Entry</a></li>
@@ -25,12 +79,10 @@
         <ul>
           <li><a href="#" data-icon="eye" onclick="window.location='data_analysis';">Data Analysis</a></li>
           <li><a href="#" data-icon="clock">History</a></li>
-          <li><a href="#" data-icon="user">Connect</a></li>
           <li><a href="#" data-icon="action">Share</a></li>
           <li><a href="#" data-icon="comment">Messages</a></li>
           <li><a href="#" data-icon="gear">Settings</a></li>
           <li><a href="#" data-icon="power">Logout</a></li>
-          <li><a href="#" data-icon="search">Search</a></li>
         </ul>
       </div>
     </div>

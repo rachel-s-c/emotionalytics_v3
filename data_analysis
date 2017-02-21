@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<!-- script for chart -->
-<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<script type="text/javascript">
+	<!-- script for chart -->
+	<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script type="text/javascript">
 
-window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer", {
-		theme: "theme2",
-		title:{
-			text: "Basic Column Chart - CanvasJS"
-		},
-		animationEnabled: false,
-		data: [
-		{
-			type: "line",
-			dataPoints: [
-				{ label: "Feb 15 '17",  y: -21, click: onClick},
-				{ label: "Feb 16 '17", y: -30, click: onClick},
-				{ label: "Feb 17 '17", y: 24, click: onClick},
-				{ label: "Feb 18 '17",  y: 1, click: onClick},
-				{ label: "Feb 19 '17",  y: 48, click: onClick},
-				{ label: "Feb 20 '17",  y: 32, click: onClick},
-				{ label: "Feb 21 '17",  y: 20, click: onClick}
-			]
-		}
-		]
-	});
-	chart.render();
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer", {
+				theme: "theme2",
+				title:{
+					text: "Weekly Mood Chart"
+				},
+				animationEnabled: true,
+				data: [
+				{
+					type: "line",
+					dataPoints: [
+					{ label: "Feb 15",  y: -21, click: onClick},
+					{ label: "Feb 16", y: -30, click: onClick},
+					{ label: "Feb 17", y: 24, click: onClick},
+					{ label: "Feb 18",  y: 1, click: onClick},
+					{ label: "Feb 19",  y: 48, click: onClick},
+					{ label: "Feb 20",  y: 32, click: onClick},
+					{ label: "Feb 21",  y: 20, click: onClick}
+					]
+				}
+				]
+			});
+			chart.render();
 
-	function onClick(e) {
-		if(e.dataPoint.label == "Feb 15 '17") {
-			document.location.href = 'data_jan15.html';
-		}
-		else if(e.dataPoint.label == "Feb 16 '17") {
-			document.location.href = 'data_jan16.html';
-		}
-		else if(e.dataPoint.label == "Feb 17 '17") {
-			document.location.href = 'data_jan17.html';
-		}
-		else if(e.dataPoint.label == "Feb 18 '17") {
-			document.location.href = 'data_jan18.html';
-		}
-		else if(e.dataPoint.label == "Feb 19 '17") {
-			document.location.href = 'data_jan19.html';
-		}
-		else if(e.dataPoint.label == "Feb 20 '17") {
-			document.location.href = 'data_jan20.html';
-		}
-	}
+			function onClick(e) {
+				if(e.dataPoint.label == "Feb 15") {
+					document.location.href = 'data_jan15.html';
+				}
+				else if(e.dataPoint.label == "Feb 16") {
+					document.location.href = 'data_jan16.html';
+				}
+				else if(e.dataPoint.label == "Feb 17") {
+					document.location.href = 'data_jan17.html';
+				}
+				else if(e.dataPoint.label == "Feb 18") {
+					document.location.href = 'data_jan18.html';
+				}
+				else if(e.dataPoint.label == "Feb 19") {
+					document.location.href = 'data_jan19.html';
+				}
+				else if(e.dataPoint.label == "Feb 20") {
+					document.location.href = 'data_jan20.html';
+				}
+			}
 
-}
-</script>
+		}
+	</script>
 </head>
 <body>
 
-  <div data-role="page" id="pageone">
-    <div data-role="header">
-      <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
-      <h1>Emotionalytics: Data Analysis</h1>
-    </div>
+	<div data-role="page" id="pageone">
+		<div data-role="header">
+			<a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
+			<h1>Emotionalytics: Data Analysis</h1>
+		</div>
 
-  <div data-role="main" class="ui-content">
-    <!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
-    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
-    <p> Positive Mood Influencers: </p>
-      <div data-role="collapsible" data-theme="b" data-content-theme="a">
-      <h4>Activities:</h4>
-      <ul data-role="listview">
-        <li><a href="#"> <img src = "http://pre14.deviantart.net/5e2b/th/pre/f/2015/245/9/b/new_spotify_icon_by_mattroxzworld-d98301o.png" alt = "Spotify" style="height:50px; width:50px; padding: 10px"> Happy by Pharrell Williams </a></li>
-        <li><a href="#"> <img src = "https://images.seeklogo.net/2016/09/facebook-icon-preview-1.png" alt = "Facebook" style="height:60px; width:60px; padding: 6px"> Family Reunion</a></li>
-        <li><a href="#"> <img src = "http://www.myiconfinder.com/uploads/iconsets/067f33d33e085fde8c366c8ae7162d95-heart.png" alt = "Spotify" style="height:50px; width:50px; padding: 10px"> Ran 4 miles Personal Best</a></li>
-      </ul>
-    </div>
+		<div data-role="main" class="ui-content">
+			<!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
+			<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+			<p> Positive Mood Influencers: </p>
+			<div data-role="collapsible" data-theme="b" data-content-theme="a">
+				<h4>Activities:</h4>
+				<ul data-role="listview">
+					<li><a href="#PopupDialogSpotify" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://pre14.deviantart.net/5e2b/th/pre/f/2015/245/9/b/new_spotify_icon_by_mattroxzworld-d98301o.png" alt = "Spotify" style="height:50px; width:50px; padding: 10px"> oui by Jeremih </a></li>
+					<div data-role="popup" id="PopupDialogSpotify">
+						<div data-role="main" class="ui-content">
+							<p>Are you sure you want to exit Emotionalytics and open Spotify?</p>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+							<a href="https://www.spotify.com/us/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+						</div>
+					</div>
+					<li><a href="#PopupDialogFacebook" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://images.seeklogo.net/2016/09/facebook-icon-preview-1.png" alt = "Facebook" style="height:60px; width:60px; padding: 6px"> House Party at John's</a></li>
+					<div data-role="popup" id="PopupDialogFacebook">
+						<div data-role="main" class="ui-content">
+							<p>Are you sure you want to exit Emotionalytics and open Facebook?</p>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+							<a href="https://www.facebook.com/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+						</div>
+					</div>
+					<li><a href="#PopupDialogFitbit" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://lh3.googleusercontent.com/dIpnDB-EbJhzSkF1jpdHKMq0q1oq58ZsRWVKuEGzmGGaPSIwHKFq05ROAOLS4SzFUw=w300" alt = "Fitbit" style="height:50px; width:50px; padding: 10px"> Ran 5 miles, swam 1 mile</a></li>
+					<div data-role="popup" id="PopupDialogFitbit">
+						<div data-role="main" class="ui-content">
+							<p>Are you sure you want to exit Emotionalytics and open Fitbit?</p>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+							<a href="https://www.fitbit.com/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+						</div>
+					</div>
+				</ul>
+			</div>
 
-    <div data-role="collapsible" data-theme="b" data-content-theme="a">
-      <h4>People:</h4>
-      <ul data-role="listview">
-         <li><a href="#"> <img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px">John Green</a></li>
-         <li><a href="#"> <img src = "https://pbs.twimg.com/profile_images/659040352507039744/1tw770Qo.jpg" alt = "Amy Schumer" style="height:50px; width:50px; padding: 10px"> Amy Schumer </a></li>
-         <li><a href="#"> <img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+			<div data-role="collapsible" data-theme="b" data-content-theme="a">
+				<h4>People:</h4>
+				<ul data-role="listview">
+					<li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px">John Green</a></li>
+					<div data-role="popup" id="PopupDialogContacts">
+						<div data-role="main" class="ui-content">
+							<p>Are you sure you want to exit Emotionalytics and open Contacts?</p>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+						</div>
+					</div>
+					<li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"> <img src = "https://pbs.twimg.com/profile_images/659040352507039744/1tw770Qo.jpg" alt = "Amy Schumer" style="height:50px; width:50px; padding: 10px"> Amy Schumer </a></li>
+					<li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"> <img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 
 </body>
 </html>
