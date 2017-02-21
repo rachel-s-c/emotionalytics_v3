@@ -27,7 +27,7 @@
     <form method="post" action="demoform.asp">
          <div id="coloredSlider1"></div>
       <p style="float: left; padding-left: 15px">Bored</p>
-      <p style="float: right; padding-right: -5px">Excited</p>
+      <p style="float: right; padding-right: 30px">Excited</p>
       <br style="clear:both"/>    
     </form>
   </div>
@@ -42,7 +42,7 @@
         <div id="coloredSlider2"></div>
 
       <p style="float: left; padding-left: 15px">Frustrated</p>
-      <p style="float: right; padding-right: -5px">Calm</p>
+      <p style="float: right; padding-right: 30px">Calm</p>
       <br style="clear:both"/> 
     </form>
   </div>
@@ -51,7 +51,7 @@
       <div id="coloredSlider3"></div>
 
       <p style="float: left; padding-left: 15px">Anxious</p>
-      <p style="float: right; padding-right: -5px">Confident</p>
+      <p style="float: right; padding-right: 30px">Confident</p>
       <br style="clear:both"/> 
     </form>
   </div>
@@ -62,10 +62,10 @@
     <form method="post" action="demoform.asp">
              <div id="coloredSlider4"></div>
       <p style="float: left; padding-left: 15px">Sad</p>
-      <p style="float: right; padding-right: -5px">Happy</p>
+      <p style="float: right; padding-right: 30px">Happy</p>
       <br style="clear:both"/> 
       <a onclick="window.location='home'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 10px">Back</a>
-      <a onclick="window.location='what_did_you_do_today'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -3px">Next</a>
+      <a onclick="window.location='what_did_you_do_today'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 30px">Next</a>
 
     </form>
   </div>
