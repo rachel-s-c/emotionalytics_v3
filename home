@@ -73,7 +73,6 @@ window.onload = function () {
 
     <div data-role="main" class="ui-content">
         <h1 style="font-size:22px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h1>
-        <h3 style="font-size: 18px; text-align:center;">February 15, 2017 to February 21, 2017</h3>
         <div id="chartContainer" style="height: 400px; width: 750px; margin:auto;"></div>
       <div data-role="navbar">
         <ul>
