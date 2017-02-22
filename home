@@ -65,18 +65,19 @@ window.onload = function () {
     <div data-role="header">
       <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
       <h1 id="title">Welcome To Emotionalytics!</h1>
-      <h1>February 20, 2017</h1>
+      <h3 style="font-size: 18px; text-align:center;">Today is February 22, 2017</h3>
       <style>
         #title {font-size: 24px;}
       </style>
     </div>
 
     <div data-role="main" class="ui-content">
-        <h1 style="font-size:22px; text-align: center;">Weekly Mood Chart</h1>
-        <div id="chartContainer" style="height: 400px; width: 850px; margin:auto;"></div>
+        <h1 style="font-size:22px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h1>
+        <h3 style="font-size: 18px; text-align:center;">February 15, 2017 to February 21, 2017</h3>
+        <div id="chartContainer" style="height: 400px; width: 750px; margin:auto;"></div>
       <div data-role="navbar">
         <ul>
-          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel';">Log an Entry</a></li>
+          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel';"><p style="font-size: 16px;">Log an Entry</p></a></li>
         </ul>
       </div>
 
