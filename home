@@ -82,7 +82,7 @@ window.onload = function () {
         <ul>
           <li><a href="#" data-icon="eye" onclick="window.location='data_analysis';">Data Analysis</a></li>
           <li><a href="#" data-icon="clock" onclick="window.location='data_jan20.html';">History</a></li>
-          <li><a href="#" data-icon="action">Share</a></li>
+          <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
           <li><a href="#" data-icon="comment">Messages</a></li>
           <li><a href="#" data-icon="gear">Settings</a></li>
           <li><a href="#" data-icon="power">Logout</a></li>
