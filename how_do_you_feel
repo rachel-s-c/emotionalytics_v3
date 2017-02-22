@@ -20,7 +20,8 @@
 <div data-role="page">
   <div data-role="header">
     <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
-    <h1>Log an Entry: How Do You Feel?</h1>
+    <p style="font-size: 20px; text-align: center;">Log an Entry: How Do You Feel?</p>
+    <p style="font-size: 16px; text-align: center;">Today is February 22, 2017</p>
   </div>
   <div data-role="main" class="ui-content">
     <p>Move these sliders based on how you are feeling today.</p>
