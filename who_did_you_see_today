@@ -11,7 +11,8 @@
 <div data-role="page">
   <div data-role="header">
   <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
-  <h1>Log an Entry: Who Did You See Today?</h1>
+  <p style="font-size: 20px; text-align: center;">Log an Entry: Who Did You See Today?</p>
+  <p style="font-size: 16px; text-align: center;">Today is February 22, 2017</p>
   </div>
 
   <div data-role="main" class="ui-content">
