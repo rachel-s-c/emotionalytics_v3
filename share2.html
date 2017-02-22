@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+  <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
+  <p style="font-size: 20px; text-align: center;">Share: Who would you like to share these entries with?</p>
+  <p style="font-size: 16px; text-align: center;">Today is February 22, 2017</p>
+  </div>
+
+     <div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+      <fieldset data-role="controlgroup">
+        <legend> Please select the people you would like to share the selected entries with. </legend>
+
+          <form class="ui-filterable">
+          	<input id="myFilter" data-type="search" placeholder="Search for names...">
+          </form>
+
+          <label for="drphil"><img src = "http://therichest.imgix.net/wp-content/uploads/2011/04/dr_phil_mcgraw.jpg?auto=format&q=90&lossless=1" alt = "Dr. Phil" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Dr. Phil</label>
+          <input type="checkbox" name="people" id="drphil" value="drphil">
+
+           <label for="john"><img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px; vertical-align: middle">John Green</label>
+          <input type="checkbox" name="people" id="john" value="john">
+
+          <label for="amy"><img src = "https://pbs.twimg.com/profile_images/659040352507039744/1tw770Qo.jpg" alt = "Amy Schumer" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Amy Schumer</label>
+          <input type="checkbox" name="people" id="amy" value="amy">
+          <label for="zac"><img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Zac Efron</label>
+          <input type="checkbox" name="people" id="zac" value="zac">
+          <label for="mary"><img src = "http://www.globalharvestinitiative.org/wp-content/uploads/2015/10/Mary-Lewis-Headshot.jpg" alt = "Mary Lewis" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Mary Lewis</label>
+          <input type="checkbox" name="people" id="mary" value="mary">
+          <label for="greg"><img src = "http://www.landmarkprofessional.net/wp-content/uploads/2015/02/Greg_Bolton.jpg" alt = "Greg Bolton" style="height:50px; width:50px; padding: 10px; vertical-align: middle">Greg Bolton</label>
+          <input type="checkbox" name="people" id="greg" value="greg">
+     </div>
+
+     <div data-role="popup" id="submit-share-popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+				<div data-role="main" class="ui-content">
+					<p>Entries were successfully shared.</p>
+					<a href="share2.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" style="float: right; margin-right: -1px;">Done</a>
+				</div>
+	 </div>
+
+     <div>
+      <a onclick="window.location='share.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 10px;">Back</a>
+
+      <a href=#submit-share-popup data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 10px;">Submit</a>
+     </div>
+
+		
+
+ 
+ </body>
+ </html>
