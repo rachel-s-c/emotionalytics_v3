@@ -64,8 +64,8 @@ window.onload = function () {
   <div data-role="page" id="pageone">
     <div data-role="header">
       <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
-      <h1 style="font-size: 20px;">Welcome To Emotionalytics!</h1>
-      <h3>Today is February 22, 2017</h3>
+      <p style="font-size: 20px; text-align: center;">Welcome To Emotionalytics!</p>
+      <p style="font-size: 16px; text-align: center;">Today is February 22, 2017</p>
     </div>
 
     <div data-role="main" class="ui-content">
