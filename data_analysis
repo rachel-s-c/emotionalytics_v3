@@ -21,13 +21,14 @@
 				{
 					type: "line",
 					dataPoints: [
-					{ label: "Feb 15",  y: -21, click: onClick},
-					{ label: "Feb 16", y: -30, click: onClick},
-					{ label: "Feb 17", y: 24, click: onClick},
-					{ label: "Feb 18",  y: 1, click: onClick},
-					{ label: "Feb 19",  y: 48, click: onClick},
-					{ label: "Feb 20",  y: 32, click: onClick},
-					{ label: "Feb 21",  y: 20, click: onClick}
+						{ label: "Feb 15 '17",  y: -21, click: onClick},
+						{ label: "Feb 16 '17", y: -30, click: onClick},
+						{ label: "Feb 17 '17", y: 24, click: onClick},
+						{ label: "Feb 18 '17",  y: 1, click: onClick},
+						{ label: "Feb 19 '17",  y: 48, click: onClick},
+						{ label: "Feb 20 '17",  y: 32, click: onClick},
+						{ label: "Feb 21 '17",  y: 20, click: onClick}
+
 					]
 				}
 				]
@@ -65,8 +66,8 @@
 			<a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
 			<h1>Data Analysis</h1>
 		</div>
-		
-		
+
+
 		<div data-role="main" class="ui-content">
 		<h1 id="chart-title">Weekly Mood Chart</h1>
 		<style>
