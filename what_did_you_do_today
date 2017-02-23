@@ -18,15 +18,15 @@
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
       <fieldset data-role="controlgroup">
-        <legend> The following apps have been synced. Please unselect which of the following activities you would not like to include in today's entry. </legend>
-          <label for="camera"> Camera Roll 
+        <legend> The following apps have been synced today. Please unselect which of the following activities you would not like to include in today's entry. </legend>
+          <label for="camera"><p> Camera Roll        </p> 
             <img src="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_1280.jpg" alt = "Cat" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
             <img src="http://weknowyourdreams.com/images/family/family-07.jpg" alt = "Family" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
             <img src="http://www.technobuffalo.com/wp-content/uploads/2014/04/fast-food.jpg" alt = "Burger" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
             <img src="https://cdn.pixabay.com/photo/2016/02/19/15/46/dog-1210559_1280.jpg" alt = "Dog" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
           </label>
           <input type="checkbox" name="apps" id="camera" value="camera" checked>
-          <label for="calendar"> Calendar
+          <label for="calendar"> Calendar           
             <img src="calendar-event.png" class="activity-item" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
             <img src="calendar-event2.png" class="activity-item" style="height:50px; width:50px; padding: 10px; vertical-align: middle">
           </label>
