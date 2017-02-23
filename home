@@ -22,13 +22,13 @@ window.onload = function () {
     {
       type: "line",
       dataPoints: [
-        { label: "Feb 15", y: -21, click: onClick},
-        { label: "Feb 16", y: -30, click: onClick},
-        { label: "Feb 17", y: 24, click: onClick},
-        { label: "Feb 18",  y: 1, click: onClick},
-        { label: "Feb 19",  y: 48, click: onClick},
-        { label: "Feb 20",  y: 32, click: onClick},
-        { label: "Feb 21",  y: 20, click: onClick}
+        { label: "Jan 15", y: -21, click: onClick},
+        { label: "Jan 16", y: -30, click: onClick},
+        { label: "Jan 17", y: 24, click: onClick},
+        { label: "Jan 18",  y: 1, click: onClick},
+        { label: "Jan 19",  y: 48, click: onClick},
+        { label: "Jan 20",  y: 32, click: onClick},
+        { label: "Jan 21",  y: 20, click: onClick}
       ]
     }
     ]
@@ -36,23 +36,26 @@ window.onload = function () {
   chart.render();
 
   function onClick(e) {
-    if(e.dataPoint.label == "Feb 15") {
+    if(e.dataPoint.label == "Jan 15") {
       document.location.href = 'data_jan15.html';
     }
-    else if(e.dataPoint.label == "Feb 16") {
+    else if(e.dataPoint.label == "Jan 16") {
       document.location.href = 'data_jan16.html';
     }
-    else if(e.dataPoint.label == "Feb 17") {
+    else if(e.dataPoint.label == "Jan 17") {
       document.location.href = 'data_jan17.html';
     }
-    else if(e.dataPoint.label == "Feb 18") {
+    else if(e.dataPoint.label == "Jan 18") {
       document.location.href = 'data_jan18.html';
     }
-    else if(e.dataPoint.label == "Feb 19") {
+    else if(e.dataPoint.label == "Jan 19") {
       document.location.href = 'data_jan19.html';
     }
-    else if(e.dataPoint.label == "Feb 20") {
+    else if(e.dataPoint.label == "Jan 20") {
       document.location.href = 'data_jan20.html';
+    }
+    else if(e.dataPoint.label == "Jan 21") {
+      document.location.href = 'data_jan21.html';
     }
   }
 
@@ -60,7 +63,6 @@ window.onload = function () {
 </script>
 </head>
 <body>
-
   <div data-role="page" id="pageone">
     <div data-role="header">
       <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
@@ -91,9 +93,9 @@ window.onload = function () {
     </div>
 
     <div data-role="footer">
-      
+
     </div>
-  </div> 
+  </div>
 
 </body>
 </html>
