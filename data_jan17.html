@@ -1,0 +1,62 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+  <div data-role="page" id="pageone">
+    <div data-role="header">
+      <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='home';">Home</a>
+      <h1>History: January 17, 2017</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <div>
+        Today, your mood score was: 24
+      </div>
+      <p>Here's what influenced your mood today....</p>
+      <div data-theme="b" data-content-theme="a">
+        <h4>Activities:</h4>
+        <ul data-role="listview">
+          <li><a href="#PopupDialogSpotify" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://pre14.deviantart.net/5e2b/th/pre/f/2015/245/9/b/new_spotify_icon_by_mattroxzworld-d98301o.png" alt = "Spotify" style="height:50px; width:50px; padding: 10px">oui by Jeremih</a></li>
+          <div data-role="popup" id="PopupDialogSpotify">
+            <div data-role="main" class="ui-content">
+              <p>Are you sure you want to exit Emotionalytics and open Spotify?</p>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+              <a href="https://www.spotify.com/us/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+            </div>
+          </div>
+          <li><a href="#PopupDialogFacebook" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://images.seeklogo.net/2016/09/facebook-icon-preview-1.png" alt = "Facebook" style="height:60px; width:60px; padding: 6px">House Party at John's</a></li>
+          <div data-role="popup" id="PopupDialogFacebook">
+                      <div data-role="main" class="ui-content">
+              <p>Are you sure you want to exit Emotionalytics and open Facebook?</p>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+              <a href="https://www.facebook.com/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div data-theme="b" data-content-theme="a">
+        <h4>People:</h4>
+        <ul data-role="listview">
+         <li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "http://www.indianapolismonthly.com/wp-content/uploads/sites/3/2014/12/1214-johngreen.jpg" alt = "John Green" style="height:50px; width:50px; padding: 10px">John Green</a></li>
+         <div data-role="popup" id="PopupDialogContacts">
+                     <div data-role="main" class="ui-content">
+              <p>Are you sure you want to exit Emotionalytics and open Contacts?</p>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" data-rel="back" style="float: right; margin-right: -1px">Exit</a>
+            </div>
+        </div>
+        <li><a href="#PopupDialogContacts" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"> <img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
+      </ul>
+    </div>
+  </div>
+      <a onclick="window.location='data_jan16.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 3px">Previous Entry</a>
+      <a onclick="window.location='data_jan18.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 2px">Next Entry</a>
+</div>
+</body>
+</html>
