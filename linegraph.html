@@ -16,13 +16,13 @@ window.onload = function () {
 		{
 			type: "line",
 			dataPoints: [
-				{ label: "Feb 15 '17",  y: -21, click: onClick},
-				{ label: "Feb 16 '17", y: -30, click: onClick},
-				{ label: "Feb 17 '17", y: 24, click: onClick},
-				{ label: "Feb 18 '17",  y: 1, click: onClick},
-				{ label: "Feb 19 '17",  y: 48, click: onClick},
-				{ label: "Feb 20 '17",  y: 32, click: onClick},
-				{ label: "Feb 21 '17",  y: 20, click: onClick}
+				{ label: "Jan 15 '17",  y: -21, click: onClick},
+				{ label: "Jan 16 '17", y: -30, click: onClick},
+				{ label: "Jan 17 '17", y: 24, click: onClick},
+				{ label: "Jan 18 '17",  y: 1, click: onClick},
+				{ label: "Jan 19 '17",  y: 48, click: onClick},
+				{ label: "Jan 20 '17",  y: 32, click: onClick},
+				{ label: "Jan 21 '17",  y: 20, click: onClick}
 			]
 		}
 		]
@@ -30,23 +30,26 @@ window.onload = function () {
 	chart.render();
 
 	function onClick(e) {
-		if(e.dataPoint.label = "Feb 15 '17") {
+		if(e.dataPoint.label = "Jan 15 '17") {
 			document.location.href = 'data_jan15.html';
 		}
-		else if(e.dataPoint.label = "Feb 16 '17") {
+		else if(e.dataPoint.label = "Jan 16 '17") {
 			document.location.href = 'data_jan16.html';
 		}
-		else if(e.dataPoint.label = "Feb 17 '17") {
+		else if(e.dataPoint.label = "Jan 17 '17") {
 			document.location.href = 'data_jan17.html';
 		}
-		else if(e.dataPoint.label = "Feb 18 '17") {
+		else if(e.dataPoint.label = "Jan 18 '17") {
 			document.location.href = 'data_jan18.html';
 		}
-		else if(e.dataPoint.label = "Feb 19 '17") {
+		else if(e.dataPoint.label = "Jan 19 '17") {
 			document.location.href = 'data_jan19.html';
 		}
-		else if(e.dataPoint.label = "Feb 2- '17") {
+		else if(e.dataPoint.label = "Jan 20 '17") {
 			document.location.href = 'data_jan20.html';
+		}
+		else if(e.dataPoint.label = "Jan 21 '17") {
+			document.location.href = 'data_jan21.html';
 		}
 	}
 
