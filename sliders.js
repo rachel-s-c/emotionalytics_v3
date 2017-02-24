@@ -49,7 +49,7 @@ $(function() {
 		    range: "min",
       		min: 0,
 		    max: 100,
-		    value: 0,
+		    value: 50,
 		    slide: refreshSwatch1,
 		    change: refreshSwatch1
 	  });
@@ -69,7 +69,7 @@ $(function() {
 		    range: "min",
       		min: 0,
 		    max: 100,
-		    value: 0,
+		    value: 50,
 		    slide: refreshSwatch2,
 		    change: refreshSwatch2
 	  });
@@ -89,7 +89,7 @@ $(function() {
 		    range: "min",
       		min: 0,
 		    max: 100,
-		    value: 0,
+		    value: 50,
 		    slide: refreshSwatch3,
 		    change: refreshSwatch3
 	  });
@@ -110,7 +110,7 @@ $(function() {
 		    range: "min",
       		min: 0,
 		    max: 100,
-		    value: 0,
+		    value: 50,
 		    slide: refreshSwatch4,
 		    change: refreshSwatch4
 	  });

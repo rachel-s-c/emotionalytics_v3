@@ -73,7 +73,9 @@
 			#chart-title {font-size: 22px; text-align: center;}
 		</style>
 			<!-- <img src = "https://camo.githubusercontent.com/93f6107fc0a60588aeb56a294f24cc4c62a62b96/687474703a2f2f636c2e6c792f696d6167652f334d337930413377324331462f64" alt = "Mood graph" "> -->
-			<div id="chartContainer" style="height: 400px; width: 850px; margin:auto;"></div>
+			<img src = "moodscorecolors3.jpeg" alt = "mood colors" style="height:400px; width:50px;float: left; padding-left: 300px" >
+			<div id="chartContainer" style="height: 400px; width: 650px; margin:auto;"></div>
+			<a onclick="window.location='share2.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-action ui-btn-icon-right" style="float: right; margin-right: -3px padding-left: -80px;">Share</a>
 			<p id="subtitle"> Top Positive Mood Influencers: </p>
 			<style>
 				#subtitle {font-size: 22px;}

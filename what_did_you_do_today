@@ -48,7 +48,7 @@
       </fieldset>
 
       <div class="ui-field-contain">
-        <label for="info">Additional Information:</label>
+        <label for="info">Did anything memorable happen today?</label>
         <textarea name="addinfo" id="info"></textarea>
       </div>
       <a onclick="window.location='how_do_you_feel'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 3px">Back</a>

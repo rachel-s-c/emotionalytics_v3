@@ -10,7 +10,7 @@ body {
 	margin: 15px;
 }
 #coloredSlider1 .ui-slider-range { 
-	background: #ff0000; 
+	background: #ffff00; 
 }
 #coloredSlider1 .ui-state-default, .ui-widget-content .ui-state-default {
 	padding-top: 18px;
@@ -23,7 +23,7 @@ body {
 	margin: 15px;
 }
 #coloredSlider2 .ui-slider-range { 
-	background: #ff0000; 
+	background: #ffff00; 
 }
 
 
@@ -35,7 +35,7 @@ body {
 	margin: 15px;
 }
 #coloredSlider3 .ui-slider-range { 
-	background: #ff0000; 
+	background: #ffff00; 
 }
 
 
@@ -47,7 +47,7 @@ body {
 	margin: 15px;
 }
 #coloredSlider4 .ui-slider-range { 
-	background: #ff0000; 
+	background: #ffff00; 
 }
 
 

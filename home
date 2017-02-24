@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="date.js"></script>
+
 
 
 <!-- script for chart -->
@@ -67,12 +69,13 @@ window.onload = function () {
     <div data-role="header">
       <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
       <p style="font-size: 20px; text-align: center;">Welcome To Emotionalytics!</p>
+      <span id="date"></span>
       <p style="font-size: 16px; text-align: center;">Today is February 22, 2017</p>
     </div>
 
     <div data-role="main" class="ui-content">
         <h1 style="font-size:20px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h1>
-        <h3 style="font-size: 16px; text-align:center;">February 15, 2017 to February 21, 2017</h3>
+        <h3 style="font-size: 16px; text-align:center;">January 15, 2017 to January 21, 2017</h3> <img src = "moodscorecolors3.jpeg" alt = "mood colors" style="height:400px; width:50px;float: left; padding-left: 300px" >
         <div id="chartContainer" style="height: 400px; width: 650px; margin:auto;"></div>
       <div data-role="navbar">
         <ul>
