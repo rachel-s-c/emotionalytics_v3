@@ -1,0 +1,53 @@
+<!--largely taken from https://codepen.io/agcolom/pen/jtHmv by Anne-Gaelle Colom-->
+
+body {
+	font-family: Arial, Helvetica, sans-serif; background-color: "blue";
+}
+#coloredSlider1 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider1 .ui-slider-range { 
+	background: #ffff00; 
+}
+#coloredSlider1 .ui-state-default, .ui-widget-content .ui-state-default {
+	padding-top: 18px;
+}
+
+#coloredSlider2 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider2 .ui-slider-range { 
+	background: #ffff00; 
+}
+
+
+
+#coloredSlider3 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider3 .ui-slider-range { 
+	background: #ffff00; 
+}
+
+
+
+#coloredSlider4 {
+	float: left;
+	clear: left;
+	width: 1200px;
+	margin: 15px;
+}
+#coloredSlider4 .ui-slider-range { 
+	background: #ffff00; 
+}
+
+
