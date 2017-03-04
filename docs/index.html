@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-<link rel="stylesheet" href="sliderscss.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script src="sliders.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 
-
+<!-- script for chart -->
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+  var chart = new CanvasJS.Chart("chartContainer", {
+    theme: "theme2",
+    //title:{
+    //  text: "Weekly Mood Chart"
+    //},
+    animationEnabled: false,
+    data: [
+    {
+      type: "line",
+      dataPoints: [
+        { label: "Jan 15", y: -21, click: onClick},
+        { label: "Jan 16", y: -30, click: onClick},
+        { label: "Jan 17", y: 24, click: onClick},
+        { label: "Jan 18",  y: 1, click: onClick},
+        { label: "Jan 19",  y: 48, click: onClick},
+        { label: "Jan 20",  y: 32, click: onClick},
+        { label: "Jan 21",  y: 20, click: onClick}
+      ]
+    }
+    ]
+  });
+  chart.render();
+  function onClick(e) {
+    if(e.dataPoint.label == "Jan 15") {
+      document.location.href = 'data_jan15.html';
+    }
+    else if(e.dataPoint.label == "Jan 16") {
+      document.location.href = 'data_jan16.html';
+    }
+    else if(e.dataPoint.label == "Jan 17") {
+      document.location.href = 'data_jan17.html';
+    }
+    else if(e.dataPoint.label == "Jan 18") {
+      document.location.href = 'data_jan18.html';
+    }
+    else if(e.dataPoint.label == "Jan 19") {
+      document.location.href = 'data_jan19.html';
+    }
+    else if(e.dataPoint.label == "Jan 20") {
+      document.location.href = 'data_jan20.html';
+    }
+    else if(e.dataPoint.label == "Jan 21") {
+      document.location.href = 'data_jan21.html';
+    }
+  }
+}
+</script>
 </head>
 <body>
+  <div data-role="page" id="pageone">
 
-
-
-<div data-role="page">
   <div data-role="header">
     <h1>Welcome To Emotionalytics!</h1>
     <p id="date" style="font-size: 14px; text-align: center"></p>
@@ -32,55 +75,23 @@
       </ul>
     </div>
   </div>
-  
-  <div data-role="main" class="ui-content">
-    <p>Move these sliders based on how you are feeling today.</p>
-    <form method="post" action="demoform.asp">
-         <div id="coloredSlider1"></div>
-      <p style="float: left; padding-left: 15px">Bored</p>
-      <p style="float: right; padding-right: 30px">Excited</p>
-      <br style="clear:both"/>    
-    </form>
+
+
+    <div data-role="main" class="ui-content">
+        <h2 style="font-size: 14px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h2>
+        <h3 style="font-size: 12px; text-align:center;">January 15, 2017 to January 21, 2017</h3> <img src = "moodscorecolors3.jpeg" alt = "mood colors" style="height:350px; width:50px;float: left; padding-left: 250px" >
+        <div id="chartContainer" style="height: 350px; width: 550px; margin:auto;"></div>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel.html';"><p style="font-size: 14px;">Log an Entry</p></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="footer">
+
+    </div>
   </div>
-  <div data-role="main" class="ui-content">
-
-    <form method="post" action="demoform.asp">
-
-
-        
-
-
-        <div id="coloredSlider2"></div>
-
-      <p style="float: left; padding-left: 15px">Frustrated</p>
-      <p style="float: right; padding-right: 30px">Calm</p>
-      <br style="clear:both"/> 
-    </form>
-  </div>
-  <div data-role="main" class="ui-content">
-    <form method="post" action="demoform.asp">
-      <div id="coloredSlider3"></div>
-
-      <p style="float: left; padding-left: 15px">Anxious</p>
-      <p style="float: right; padding-right: 30px">Confident</p>
-      <br style="clear:both"/> 
-    </form>
-  </div>
-
-
-
-  <div data-role="main" class="ui-content">
-    <form method="post" action="demoform.asp">
-             <div id="coloredSlider4"></div>
-      <p style="float: left; padding-left: 15px">Sad</p>
-      <p style="float: right; padding-right: 30px">Happy</p>
-      <br style="clear:both"/> 
-      <a onclick="window.location='index.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 10px">Back</a>
-      <a onclick="window.location='what_did_you_do_today.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 30px">Next</a>
-
-    </form>
-  </div>
-</div>
 <script>
 var d = new Date();
 document.getElementById("date").innerHTML = 'Today is ' + d.toDateString();
