@@ -10,7 +10,6 @@
 <!-- script for chart -->
 <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
-
 window.onload = function () {
   var chart = new CanvasJS.Chart("chartContainer", {
     theme: "theme2",
@@ -34,7 +33,6 @@ window.onload = function () {
     ]
   });
   chart.render();
-
   function onClick(e) {
     if(e.dataPoint.label == "Jan 15") {
       document.location.href = 'data_jan15.html';
@@ -58,36 +56,34 @@ window.onload = function () {
       document.location.href = 'data_jan21.html';
     }
   }
-
 }
 </script>
 </head>
 <body>
   <div data-role="page" id="pageone">
-    <div data-role="header">
-      <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
-      <p style="font-size: 20px; text-align: center;">Welcome To Emotionalytics!</p>
-      <p id="date" style="font-size: 16px; text-align: center"></p>
+
+  <div data-role="header">
+    <h1>Welcome To Emotionalytics!</h1>
+    <p id="date" style="font-size: 14px; text-align: center"></p>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="home" onclick="window.location='index.html';">Home</a></li>
+        <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';">Data Analysis</a></li>
+        <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';">History</a></li>
+        <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
+        <li><a href="#" data-icon="gear">Settings</a></li>
+      </ul>
     </div>
+  </div>
+
 
     <div data-role="main" class="ui-content">
-        <h1 style="font-size:20px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h1>
-        <h3 style="font-size: 16px; text-align:center;">January 15, 2017 to January 21, 2017</h3> <img src = "moodscorecolors3.jpeg" alt = "mood colors" style="height:400px; width:50px;float: left; padding-left: 250px" >
-        <div id="chartContainer" style="height: 400px; width: 650px; margin:auto;"></div>
+        <h2 style="font-size: 14px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h2>
+        <h3 style="font-size: 12px; text-align:center;">January 15, 2017 to January 21, 2017</h3> <img src = "moodscorecolors3.jpeg" alt = "mood colors" style="height:350px; width:50px;float: left; padding-left: 250px" >
+        <div id="chartContainer" style="height: 350px; width: 550px; margin:auto;"></div>
       <div data-role="navbar">
         <ul>
-          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel.html';"><p style="font-size: 16px;">Log an Entry</p></a></li>
-        </ul>
-      </div>
-
-      <div data-role="navbar">
-        <ul>
-          <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';">Data Analysis</a></li>
-          <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';">History</a></li>
-          <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
-          <li><a href="#" data-icon="comment">Messages</a></li>
-          <li><a href="#" data-icon="gear">Settings</a></li>
-          <li><a href="#" data-icon="power">Logout</a></li>
+          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel.html';"><p style="font-size: 14px;">Log an Entry</p></a></li>
         </ul>
       </div>
     </div>
