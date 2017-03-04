@@ -63,11 +63,15 @@ window.onload = function () {
   <div data-role="page" id="pageone">
 
   <div data-role="header">
-    <h1>Welcome To Emotionalytics!</h1>
-    <p id="date" style="font-size: 14px; text-align: center"></p>
+    <h1 id="title" style="text-align: center; padding-bottom: 10px;">Welcome To Emotionalytics!</h1>
+    <h3 id="date" style="font-size: 14px; text-align:center; padding-top: 0px;"></h3>
+    
+    
+   
+
     <div data-role="navbar">
       <ul>
-        <li><a href="#" data-icon="home" onclick="window.location='index.html';">Home</a></li>
+        <li><a href="#" class="ui-btn-active" data-icon="home" onclick="window.location='index.html';">Home</a></li>
         <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';">Data Analysis</a></li>
         <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';">History</a></li>
         <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
@@ -88,9 +92,6 @@ window.onload = function () {
       </div>
     </div>
 
-    <div data-role="footer">
-
-    </div>
   </div>
 <script>
 var d = new Date();
