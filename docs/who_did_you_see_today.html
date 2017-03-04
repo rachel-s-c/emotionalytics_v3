@@ -10,10 +10,20 @@
 
 <div data-role="page">
   <div data-role="header">
-  <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" onclick="window.location='index.html';">Home</a>
-  <p style="font-size: 20px; text-align: center;">Log an Entry: Who Did You See Today?</p>
-  <p id="date" style="font-size: 16px; text-align: center"></p>
+    <h1 id="title" style="text-align: center; padding-bottom: 10px;">Log an Entry: Who Did You See Today?</h1>
+    <h3 id="date" style="font-size: 14px; text-align:center; padding-top: 0px;"></h3>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="home" onclick="window.location='index.html';">Home</a></li>
+        <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';">Data Analysis</a></li>
+        <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';">History</a></li>
+        <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
+        <li><a href="#" data-icon="gear">Settings</a></li>
+      </ul>
+    </div>
   </div>
+  
 
   <div data-role="main" class="ui-content">
     <form method="post" action="demoform.asp">
