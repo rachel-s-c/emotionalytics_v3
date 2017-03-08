@@ -59,35 +59,86 @@ window.onload = function () {
 }
 </script>
 </head>
+<style>
+
+#pageone{
+ background-color: #FFFFFF;
+}
+#top{
+ background-color: #FFFFFF;
+}
+
+.ui-content{
+ background-color: #FFFFFF;
+}
+#LogEntry{
+   margin-top: 20px;
+   border-style: outset;
+ background-color: #C3E6E6;
+}
+#LogEntry:active{
+    background-color: #F2C7FF;
+}
+#homebutt{
+      background-color: #8CB3FF;
+}
+#homebutt:active{
+    background-color: #F2C7FF;
+}
+#databutt{
+ background-color: #C3E6E6;
+}
+#databutt:active{
+    background-color: #F2C7FF;
+}
+#hisbutt{
+ background-color: #C3E6E6;
+}
+#hisbutt:active{
+    background-color: #F2C7FF;
+}
+#sharebutt{
+ background-color: #C3E6E6;
+}
+#sharebutt:active{
+    background-color: #F2C7FF;
+}
+#setbutt{
+ background-color: #C3E6E6;
+}
+
+
+
+</style>
 <body>
   <div data-role="page" id="pageone">
 
-  <div data-role="header">
+  <div data-role="header" id="top">
     <h1 id="title" style="text-align: center; padding-bottom: 10px;">Welcome To Emotionalytics!</h1>
     <h3 id="date" style="font-size: 14px; text-align:center; padding-top: 0px;"></h3>
     
     
    
 
-    <div data-role="navbar">
+    <div data-role="navbar" id="navbar1">
       <ul>
-        <li><a href="#" class="ui-btn-active" data-icon="home" onclick="window.location='index.html';">Home</a></li>
-        <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';">Data Analysis</a></li>
-        <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';">History</a></li>
-        <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
-        <li><a href="#" data-icon="gear">Settings</a></li>
+        <li><a href="#" class="ui-btn-active" data-icon="home" onclick="window.location='index.html';" id="homebutt">Home</a></li>
+        <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';" id="databutt">Data Analysis</a></li>
+        <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';" id="hisbutt">History</a></li>
+        <li><a href="#" data-icon="action" onclick="window.location='share.html';" id="sharebutt">Share</a></li>
+        <li><a href="#" data-icon="gear" id="setbutt">Settings</a></li>
       </ul>
     </div>
   </div>
 
 
-    <div data-role="main" class="ui-content">
-        <h2 style="font-size: 14px; text-align: center; margin-top: 1px;">Your Weekly Mood Chart</h2>
+    <div data-role="main" class="ui-content" >
+        <h2 style="font-size: 14px; text-align: center; margin-top: 1px;" >Your Weekly Mood Chart</h2>
         <h3 style="font-size: 12px; text-align:center;">January 15, 2017 to January 21, 2017</h3> <img src = "moodscorecolors3.jpeg" alt = "mood colors" style="height:350px; width:50px;float: left; padding-left: 300px" >
-        <div id="chartContainer" style="height: 350px; width: 550px; margin:auto;"></div>
-      <div data-role="navbar">
+        <div id="chartContainer" style="height: 350px; width: 550px; margin:auto;" ></div>
+      <div data-role="navbar" >
         <ul>
-          <li><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel.html';"><p style="font-size: 14px;">Log an Entry</p></a></li>
+          <li ><a href="#" data-icon="plus" onclick="window.location='how_do_you_feel.html';" id="LogEntry"><p style="font-size: 14px;">Log an Entry</p></a></li>
         </ul>
       </div>
     </div>

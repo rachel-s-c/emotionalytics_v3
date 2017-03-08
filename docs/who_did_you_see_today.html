@@ -6,20 +6,85 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
+<style>
+
+#pageone{
+ background-color: #FFFFFF;
+}
+#top{
+ background-color: #FFFFFF;
+}
+
+.ui-content{
+ background-color: #FFFFFF;
+}
+#LogEntry{
+   margin-top: 20px;
+   border-style: outset;
+ background-color: #C3E6E6;
+}
+#LogEntry:active{
+    background-color: #F2C7FF;
+}
+#homebutt{
+      background-color: #C3E6E6;
+}
+#homebutt:active{
+    background-color: #F2C7FF;
+}
+#databutt{
+ background-color: #C3E6E6;
+}
+#databutt:active{
+    background-color: #F2C7FF;
+}
+#hisbutt{
+ background-color: #C3E6E6;
+}
+#hisbutt:active{
+    background-color: #F2C7FF;
+}
+#sharebutt{
+ background-color: #C3E6E6;
+}
+#sharebutt:active{
+    background-color: #F2C7FF;
+}
+#setbutt{
+ background-color: #C3E6E6;
+}
+
+
+
+#nextbutt{
+ background-color: #8CB3FF;
+}
+#nextbutt:active{
+    background-color: #F2C7FF;
+}
+#backbutt{
+ background-color: #8CB3FF;
+}
+#backbutt:active{
+    background-color: #F2C7FF;
+}
+
+
+</style>
 <body>
 
-<div data-role="page">
-  <div data-role="header">
+<div data-role="page" id="pageone">
+  <div data-role="header" id="top">
     <h1 id="title" style="text-align: center; padding-bottom: 10px;">Log an Entry: Who Did You See Today?</h1>
     <h3 id="date" style="font-size: 14px; text-align:center; padding-top: 0px;"></h3>
 
     <div data-role="navbar">
       <ul>
-        <li><a href="#" data-icon="home" onclick="window.location='index.html';">Home</a></li>
-        <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';">Data Analysis</a></li>
-        <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';">History</a></li>
-        <li><a href="#" data-icon="action" onclick="window.location='share.html';">Share</a></li>
-        <li><a href="#" data-icon="gear">Settings</a></li>
+        <li><a href="#" class="ui-btn-active" data-icon="home" onclick="window.location='index.html';" id="homebutt">Home</a></li>
+        <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';" id="databutt">Data Analysis</a></li>
+        <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';" id="hisbutt">History</a></li>
+        <li><a href="#" data-icon="action" onclick="window.location='share.html';" id="sharebutt">Share</a></li>
+        <li><a href="#" data-icon="gear" id="setbutt">Settings</a></li>
       </ul>
     </div>
   </div>
@@ -45,8 +110,8 @@
           <input type="checkbox" name="people" id="greg" value="greg">
           </ul>
       </fieldset>
-      <a onclick="window.location='what_did_you_do_today.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 1px">Back</a>
-      <a onclick="window.location='data_analysis.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -2px">Submit</a>
+      <a onclick="window.location='what_did_you_do_today.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 1px" id="backbutt">Back</a>
+      <a onclick="window.location='data_analysis.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -2px" id="nextbutt">Submit</a>
     </form>
   </div>
 </div>
