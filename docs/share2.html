@@ -16,9 +16,6 @@
  background-color: #FFFFFF;
 }
 
-.ui-content{
- background-color: #FFFFFF;
-}
 #LogEntry{
    margin-top: 20px;
    border-style: outset;
@@ -58,15 +55,9 @@
 
 
 #nextbutt{
- background-color: #8CB3FF;
+ background-color: #C3E6E6;
 }
 #nextbutt:active{
-    background-color: #F2C7FF;
-}
-#backbutt{
- background-color: #8CB3FF;
-}
-#backbutt:active{
     background-color: #F2C7FF;
 }
 
@@ -81,7 +72,7 @@
           <h3 id="date" style="font-size: 14px; text-align:center; padding-top: 0px;"></h3>
         <div data-role="navbar">
       <ul>
-        <li><a href="#" class="ui-btn-active" data-icon="home" onclick="window.location='index.html';" id="homebutt">Home</a></li>
+        <li><a href="#" data-icon="home" onclick="window.location='index.html';" id="homebutt">Home</a></li>
         <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';" id="databutt">Data Analysis</a></li>
         <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';" id="hisbutt">History</a></li>
         <li><a href="#" data-icon="action" onclick="window.location='share.html';" id="sharebutt">Share</a></li>
@@ -123,14 +114,14 @@
      <div data-role="popup" id="submit-share-popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
 				<div data-role="main" class="ui-content">
 					<p>Entries were successfully shared.</p>
-					<a onclick="window.location='index.html'" href='#' class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" style="float: right; margin-right: -1px;">Done</a>
+					<a onclick="window.location='index.html'" href='#' class="ui-btn ui-corner-all ui-shadow ui-btn-inline" style="float: right; margin-right: -1px;" id="nextbutt">Done</a>
 				</div>
 	 </div>
 
      <div>
-      <a onclick="window.location='share.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 10px;" id="backbutt">Back</a>
+      <a onclick="window.location='share.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 10px;" id="nextbutt">Back</a>
 
-      <a href=#submit-share-popup data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 10px;" id="nextbutt">Submit</a>
+      <a href=#submit-share-popup data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 10px;" id="nextbutt">Submit</a>
      </div>
 
 		

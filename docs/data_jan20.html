@@ -57,15 +57,9 @@
 
 
 #nextbutt{
- background-color: #8CB3FF;
+ background-color: #C3E6E6;
 }
 #nextbutt:active{
-    background-color: #F2C7FF;
-}
-#backbutt{
- background-color: #8CB3FF;
-}
-#backbutt:active{
     background-color: #F2C7FF;
 }
 
@@ -79,7 +73,7 @@
           <h3 id="date" style="font-size: 14px; text-align:center; padding-top: 0px;"></h3>
         <div data-role="navbar">
       <ul>
-        <li><a href="#" class="ui-btn-active" data-icon="home" onclick="window.location='index.html';" id="homebutt">Home</a></li>
+        <li><a href="#" data-icon="home" onclick="window.location='index.html';" id="homebutt">Home</a></li>
         <li><a href="#" data-icon="eye" onclick="window.location='data_analysis.html';" id="databutt">Data Analysis</a></li>
         <li><a href="#" data-icon="clock" onclick="window.location='data_jan21.html';" id="hisbutt">History</a></li>
         <li><a href="#" data-icon="action" onclick="window.location='share.html';" id="sharebutt">Share</a></li>
@@ -101,16 +95,16 @@
           <div data-role="popup" id="PopupDialogSpotify">
             <div data-role="main" class="ui-content">
             <p>Are you sure you want to exit Emotionalytics and open Spotify?</p>
-              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
-              <a href="https://www.spotify.com/us/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left" data-rel="back" id="nextbutt">Back</a>
+              <a href="https://www.spotify.com/us/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px" id="nextbutt">Exit</a>
             </div>
           </div>
           <li><a href="#PopupDialogFacebook" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://images.seeklogo.net/2016/09/facebook-icon-preview-1.png" alt = "Facebook" style="height:60px; width:60px; padding: 6px">Attended Northwestern Career Fair</a></li>
           <div data-role="popup" id="PopupDialogFacebook">
             <div data-role="main" class="ui-content">
               <p>Are you sure you want to exit Emotionalytics and open Facebook?</p>
-              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
-              <a href="https://www.facebook.com/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px">Exit</a>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left" data-rel="back" id="nextbutt">Back</a>
+              <a href="https://www.facebook.com/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: -1px" id="nextbutt">Exit</a>
             </div>
           </div>
         </ul>
@@ -123,16 +117,16 @@
          <div data-role="popup" id="PopupDialog">
           <div data-role="main" class="ui-content">
             <p>Are you sure you want to exit Emotionalytics and open Contacts?</p>
-            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
-            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" data-rel="back" style="float: right; margin-right: -1px">Exit</a>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left" data-rel="back" id="nextbutt">Back</a>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-r ui-btn-icon-right" data-rel="back" style="float: right; margin-right: -1px" id="nextbutt">Exit</a>
           </div>
         </div>
         <li><a href="#PopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src = "https://s-media-cache-ak0.pinimg.com/originals/e0/e3/88/e0e3888a1a5155838cafd96413fe7e03.jpg" alt = "Zac Efron" style="height:50px; width:50px; padding: 10px">Zac Efron</a></li>
       </ul>
     </div>
   </div>
-      <a onclick="window.location='data_jan19.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 3px" id="backbutt">Previous Entry</a>
-      <a onclick="window.location='data_jan21.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 2px" id="nextbutt">Next Entry</a>
+      <a onclick="window.location='data_jan19.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-l ui-btn-icon-left" style="float: left; margin-left: 3px" id="nextbutt">Previous Entry</a>
+      <a onclick="window.location='data_jan21.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-arrow-r ui-btn-icon-right" style="float: right; margin-right: 2px" id="nextbutt">Next Entry</a>
 </div>
   <script>
 var d = new Date();
